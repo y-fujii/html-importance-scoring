@@ -1,0 +1,17 @@
+[package]
+name = "wwwchecker-rs"
+version = "0.1.0"
+authors = ["Yasuhiro Fujii <y-fujii@mimosa-pudica.net>"]
+edition = "2018"
+
+[dependencies]
+rayon = "*"
+regex = "*"
+reqwest = { version = "*", features = ["blocking"] }
+unicode-width = "*"
+unicode-normalization = "*"
+markup5ever_rcdom = { git = "https://github.com/servo/html5ever/" }
+html5ever = { git = "https://github.com/servo/html5ever/" }
+
+[profile.dev]
+debug = false
